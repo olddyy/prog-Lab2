@@ -1,0 +1,146 @@
+/* basic */
+table,
+th,
+td {
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+
+th,
+td {
+   padding: 5px;
+}
+
+th {
+   text-align: left;
+}
+
+body {
+   opacity: 0.85;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   padding-left: 20px;
+
+}
+
+html {
+   background-image: url(images/background.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+/* header */
+.wrapper {
+   display: block;
+   background-color: #1E2126;
+
+}
+
+header {
+   font-family: "Audiowide", sans-serif;
+
+}
+
+.header-container {
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+}
+
+.logo {
+   height: 85px;
+
+}
+
+.header-logo__png {
+   display: flex;
+   padding-left: 30px;
+}
+
+.header-nav {}
+
+.header-nav_navigation {}
+
+.header__btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   right: 10px;
+   padding: 10px 24px;
+   background-color: #e40e0e;
+   border-radius: 10px;
+   box-shadow: 0px 5px 10px;
+}
+
+.header__btn_a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+
+}
+
+.header_nav_ul {
+   display: flex;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.header_nav_ul span {
+   color: #e40e0e;
+}
+
+.header_nav_link {
+   display: block;
+   color: rgb(255, 255, 255);
+   text-align: justify;
+   padding: 23px;
+   text-decoration: none;
+
+}
+
+/* body */
+
+#text_h {
+   color: rgb(255, 255, 255);
+   height: auto;
+   width: 500px;
+   height: 400px;
+   text-align: left;
+   font-size: 24px;
+   position: relative;
+   left: 192px;
+   top: 100px;
+   font-family: "Bebas Neue", sans-serif;
+}
+
+#list li {
+   color: rgb(255, 255, 255);
+}
+
+#table {
+   color: white;
+
+}
+
+p {
+   color: white;
+}
+
+#fieldset {
+   color: aliceblue;
+}
+
+strong {
+   color: aliceblue;
+}
