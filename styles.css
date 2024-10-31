@@ -111,18 +111,62 @@ header {
 
 /* body */
 
+/*cart-container*/
+
+.card-container {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px;
+}
+
+.card {
+   background-color: #3d3d3d;
+   padding: 20px;
+   border-radius: 8px;
+   max-width: 250px;
+   text-align: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition:  0.3s ease;
+}
+
+.card.active {
+   background-color: #e40e0e;
+   ;
+}
+
+.card img {
+   width: 100px;
+   margin-bottom: 15px;
+}
+
+.card h3 {
+   font-size: 1.2em;
+   margin-bottom: 10px;
+}
+
+.card p {
+   font-size: 0.9em;
+}
+
+.card:hover {
+   transform: scale(1.05);
+}
+
 #text_h {
    color: rgb(255, 255, 255);
    height: auto;
    width: 500px;
    height: 400px;
    text-align: left;
-   font-size: 24px;
+   font-size: 28px;
    position: relative;
    left: 192px;
    top: 100px;
    font-family: "Bebas Neue", sans-serif;
 }
+
 
 #list li {
    color: rgb(255, 255, 255);
@@ -144,3 +188,59 @@ p {
 strong {
    color: aliceblue;
 }
+
+/* Адаптивная верстка */
+
+/*  768px -> 1024px */
+@media (min-width: 768px) and (max-width: 1023px) {
+   .logo {
+       height: 70px;
+   }
+
+   .header-container {
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+
+   .card-container {
+       gap: 20px;
+       flex-wrap: wrap;
+   }
+   .card {
+       max-width: 220px;
+   }
+
+   #text_h {
+       font-size: 30px;
+       left: 40px;
+       width: auto;
+   }
+
+   #table table {
+       width: 70%;
+       margin: 0 auto;
+   }
+
+}
+
+/*  1024px -> */
+@media (min-width: 1024px) {
+   
+   .card-container {
+       justify-content: center;
+       gap: 100px;
+   }
+
+   
+   #text_h {
+       font-size: 40px;
+       width: 600px;
+       left: 160px;
+       top: 80px;
+   }
+
+  
+  
+}
+
+/* Конец адаптивной верстки */
