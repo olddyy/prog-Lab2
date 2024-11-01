@@ -190,6 +190,47 @@ strong {
 }
 
 /* Адаптивная верстка */
+/* -> 768px */
+@media (max-width: 767px) {
+    /* Центровка и уменьшение логотипа */
+    .header-logo__png {
+        padding-left: 0;
+        text-align: center;
+    }
+    .logo {
+        height: 60px; 
+    }
+
+    /* Вертикальное выравнивание навигации */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__btn {
+        padding: 8px 18px;
+        margin-top: 10px;
+    }
+
+    #text_h {
+        width: 100%;
+        font-size: 24px; 
+        left: 0;
+        top: 20px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    
+
+   
+}
 
 /*  768px -> 1024px */
 @media (min-width: 768px) and (max-width: 1023px) {
